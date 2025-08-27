@@ -69,7 +69,7 @@ TEMPLATES = [
         },
     },
 ]
-ALLOWED_HOSTS = ["localhost", "127.0.0.1","https://pbp.cs.ui.ac.id/muhammad.fauzan44/footballnews"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","https://pbp.cs.ui.ac.id/muhammad.fauzan44/footballnews","muhammad-fauzan44-footballnews.pbp.cs.ui.ac.id"]
 
 WSGI_APPLICATION = 'football_news.wsgi.application'
 
