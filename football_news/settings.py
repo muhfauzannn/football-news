@@ -30,7 +30,6 @@ PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -70,7 +69,7 @@ TEMPLATES = [
         },
     },
 ]
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","https://pbp.cs.ui.ac.id/muhammad.fauzan44/footballnews"]
 
 WSGI_APPLICATION = 'football_news.wsgi.application'
 
