@@ -6,4 +6,4 @@ Kelas : PBP E
 
 Hobi : Makan, tidur
 
-Jurusan : Sistem Informasi
+Jurusan : Sistem Informasi gacor
