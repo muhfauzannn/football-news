@@ -59,7 +59,7 @@ ROOT_URLCONF = 'football_news.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'], # Tambahkan konten baris ini
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,6 +71,9 @@ TEMPLATES = [
     },
 ]
 ALLOWED_HOSTS = ["localhost", "127.0.0.1","https://pbp.cs.ui.ac.id/muhammad.fauzan44/footballnews","muhammad-fauzan44-footballnews.pbp.cs.ui.ac.id"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://muhammad-fauzan44-footballnews.pbp.cs.ui.ac.id"
+]
 
 WSGI_APPLICATION = 'football_news.wsgi.application'
 
