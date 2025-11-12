@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'authentication',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +55,14 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', #Tambahkan tepat di bawah SecurityMiddleware
+    'corsheaders.middleware.CorsMiddleware', # Tambahkan baris ini
 ]
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
 
 ROOT_URLCONF = 'football_news.urls'
 
@@ -71,7 +80,7 @@ TEMPLATES = [
         },
     },
 ]
-ALLOWED_HOSTS = ["localhost", "127.0.0.1","https://pbp.cs.ui.ac.id/muhammad.fauzan44/footballnews","muhammad-fauzan44-footballnews.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","https://pbp.cs.ui.ac.id/muhammad.fauzan44/footballnews","muhammad-fauzan44-footballnews.pbp.cs.ui.ac.id","10.0.2.2"]
 CSRF_TRUSTED_ORIGINS = [
     "https://muhammad-fauzan44-footballnews.pbp.cs.ui.ac.id"
 ]
